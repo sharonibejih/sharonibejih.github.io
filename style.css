@@ -53,6 +53,25 @@ button {
   padding-top: 50px;
 }
 
+.text {
+  animation-direction: alternate;
+  animation: move;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  /* animation-timing-function: linear; */
+}
+
+
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+
+  to {
+    transform: translateX(30px);
+  }
+}
+
 .box4 button {
   background-color: hsl(322, 100%, 66%);
   color: white;
@@ -64,6 +83,30 @@ button {
 .text button:active,
 .box4 button:active {
   background-color: hsl(322, 95%, 76%);
+}
+
+.box4 button {
+  animation-name: grow;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+  }
+
+  20% {
+    transform: scaleX(0.8);
+    background: hsl(322,
+        100%,
+        66%);
+  }
+}
+
+.box4 button:hover {
+  animation-play-state: paused;
 }
 
 .main-main img,
@@ -99,6 +142,41 @@ button {
   width: 150px;
   position: absolute;
   right: 70px;
+  animation: wiggle 2s linear infinite;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+
+  15% {
+    transform: rotateZ(-15deg);
+  }
+
+  20% {
+    transform: rotateZ(10deg);
+  }
+
+  25% {
+    transform: rotateZ(-10deg);
+  }
+
+  30% {
+    transform: rotateZ(6deg);
+  }
+
+  35% {
+    transform: rotateZ(-4deg);
+  }
+
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
 }
 
 .nav {
@@ -200,6 +278,7 @@ footer {
 .logo-big {
   height: 30px;
   width: 150px;
+  -webkit-filter: grayscale(200%) contrast(60%) saturate(300%) brightness(5);
   filter: grayscale(200%) contrast(60%) saturate(300%) brightness(5);
 }
 
