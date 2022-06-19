@@ -6,23 +6,22 @@
 
 /* ALL SECTIONS */
 .header,
-.main-body{
+.main-body {
   padding-left: 70px;
   padding-right: 70px;
 }
 
 a {
   text-decoration: none;
-color: hsl(193, 100%, 96%)
+  color: hsl(193, 100%, 96%);
 }
 
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
-color: hsl(192, 100%, 9%);
-font-weight: 400;
-width: 100%;
-
+  color: hsl(192, 100%, 9%);
+  font-weight: 400;
+  width: 100%;
 }
 
 .h1,
@@ -48,10 +47,10 @@ button {
   margin-top: 20px;
 }
 
-.text{
-    width: 100%;
-    padding-right: 50px;
-    padding-top: 50px;
+.text {
+  width: 100%;
+  padding-right: 50px;
+  padding-top: 50px;
 }
 
 .box4 button {
@@ -64,17 +63,16 @@ button {
 
 .text button:active,
 .box4 button:active {
-    background-color: hsl(322, 95%, 76%);
+  background-color: hsl(322, 95%, 76%);
 }
 
 .main-main img,
 .hero img,
 .div-footer img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
-
 
 /* NAV SECTION */
 .header {
@@ -82,7 +80,6 @@ button {
   display: flex;
   flex-direction: column;
 }
-
 
 .logo {
   height: 20px;
@@ -101,12 +98,11 @@ button {
   height: 40px;
   width: 150px;
   position: absolute;
-  right:70px; 
+  right: 70px;
 }
 
-.nav{
-    display: flex;
-
+.nav {
+  display: flex;
 }
 
 /* HERO SECTION */
@@ -116,6 +112,7 @@ button {
   gap: 30px;
   padding-top: 50px;
 }
+
 .hero.text {
   float: left;
   margin-top: 50%;
@@ -123,7 +120,7 @@ button {
   /* padding: 50px; */
 }
 
-.hero img{
+.hero img {
   float: right;
   height: 450px;
   width: 650px;
@@ -166,18 +163,19 @@ button {
   transform: translateY(40%);
 }
 
-._body{
-    /* float: left; */
-    width: 70%;
-}
-._img{
-    /* float: right; */
-    height: 300px;
-    width: 800px;
+._body {
+  /* float: left; */
+  width: 70%;
 }
 
-.box2{
-    flex-direction: row-reverse;
+._img {
+  /* float: right; */
+  height: 300px;
+  width: 800px;
+}
+
+.box2 {
+  flex-direction: row-reverse;
 }
 
 /* FOOTER */
@@ -188,20 +186,21 @@ footer {
   color: hsl(193, 100%, 96%);
   font-size: 16px;
 }
+
 .div-footer {
   display: flex;
   gap: 30px;
   padding-top: 150px;
   margin: auto;
-padding-left: 150px;
-    padding-right: 150px;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
 /* resize and convert logo to black n white */
 .logo-big {
   height: 30px;
   width: 150px;
-filter: grayscale(200%) contrast(60%) saturate(300%) brightness(5); 
+  filter: grayscale(200%) contrast(60%) saturate(300%) brightness(5);
 }
 
 .col1 {
@@ -221,121 +220,199 @@ filter: grayscale(200%) contrast(60%) saturate(300%) brightness(5);
 }
 
 .col4 small {
-position: absolute;
+  position: absolute;
   font-size: 8px;
   padding-top: 150px;
 }
 
-span img{
-    padding-right: 20px;
+span img {
+  padding-right: 20px;
 }
 
-span i{
-    padding: 5px;
+span i {
+  padding: 5px;
 }
-
 
 /* MOBILE RESPONSIVENESS */
-@media screen and (max-width:800px) {
+@media screen and (max-width: 900px) {
 
-    .header{
-        flex-direction: row;
-    }
+  .header,
+  head-section,
+  .div-footer {
+    padding-left: 10%;
+    padding-right: 10px;
+    overflow-x: hidden;
+  }
 
-    .hero{
-        flex-direction: column;
-    }
+  body {
+    /* font-size: smaller; */
+    text-align: center;
+    place-items: center;
+    width: 100%;
+    justify-content: center;
+    font-size: smaller;
+    overflow-x: hidden;
+  }
 
-    .main-main{
-        flex-direction: column;
-    }
+  head-section {
+    background: url(./images/bg-hero-mobile.svg);
+    width: 100%;
+    place-content: center;
+  }
 
-    .box1,
-    .box2,
-    .box3{
+  .header {
+    flex-direction: column;
+  }
+
+  .text {
+    width: 80%;
+    margin: auto;
+    display: block;
+    padding-top: 50px;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .nav button {
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    height: 35px;
+    width: 120px;
+    position: absolute;
+    right: 40px;
+  }
+
+  .main-main {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .div-footer {
+    flex-direction: column;
+    padding-left: 30%;
+  }
+
+  .col1 {
+    flex-direction: row;
+  }
+
+  .box1,
+  .box2,
+  .box3 {
     flex-direction: column-reverse;
-    }
+    place-items: center;
+    width: 80%;
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    padding: 40px;
+    padding-top: 40px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
 
-    .div-footer{
-        flex-direction: column;
-    }
+  .main-main {
+    align-items: center;
+  }
 
-    .col1{
-        flex-direction: row;
-    }
+  .main-main img,
+  .hero img,
+  .div-footer img,
+  .logo-big {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
 
-        .header,
-        .main-body {
-            padding-left: 70%;
-            padding-right: 70px;
-            width: 100%;
-        }
+  ._img {
+    height: 180px;
+    width: 220px;
+  }
 
-        .box1,
-        .box2,
-        .box3 {
-            width: 40%;
-            margin: auto;
-            display: flex;
-            gap: 50px;
-            padding: 70px;
-            background-color: white;
-            border-radius: 7px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-        }
+  ._body {
+    width: 80%;
+    text-align: center;
+    display: inline-flexbox;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
 
-                .main-main img,
-                .hero img,
-                .div-footer img {
-                    max-width: 100%;
-                    max-height: 100%;
-                    object-fit: contain;
-                }
 
-                                ._img {
-                                    /* float: right; */
-                                    height: 180px;
-                                    width: 180px;
-                                }
+  .box4 {
+    width: 80%;
+    font-size: smaller;
+    margin: auto;
+    display: block;
+    position: relative;
+    margin-left: inherit;
+    margin-right: inherit;
+  }
 
-                                                                ._body {
-                                                                    /* float: left; */
-                                                                    width: 100%;
-                                                                    text-align: center;
-                                                                    font-size: smaller;
-                                                                    justify-content: center;
-                                                                }
+  .box4 button {
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    font-weight: 700;
+    height: 50px;
+    width: 200px;
+  }
 
-        .box4 {
-            width: 30%;
-            margin: auto;
-            display: block;
-            padding: 40px;
-            padding-top: 30px;
-            padding-bottom: 60px;
-            background-color: white;
-            border-radius: 7px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-            margin-top: 20px;
-            text-align: center;
-            -ms-transform: translateY(40%);
-            transform: translateY(40%);
-        }
 
-    /* .nav button{
-        position: relative;
-        right:-200px
-    } */
+  .nav {
+    flex-direction: row;
+  }
 
-    /* .nav{
-        flex-direction: column;
-    } */
-    /* .nav1{
-        float: left;
-    }
+  footer {
+    height: 100vh;
+  }
 
-    .nav2{
-        float:right;
-    } */
-    
+  .div-footer {
+    gap: 0px;
+    font-size: 12px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .footer-logo img {
+    height: 30px;
+    width: 130px;
+  }
+
+  .col2,
+  .col3,
+  .col4 {
+    margin: auto;
+    display: inline-flex;
+    width: 100%;
+    place-content: left;
+  }
+
+  .col1,
+  .col2,
+  .col3,
+  .col4 {
+    padding: 5px;
+    padding-left: 0px;
+    display: inline;
+  }
+
+  .col4 {
+    text-align: center;
+  }
+
+  .col4 small {
+    padding-top: 10px;
+    position: relative;
+  }
+
+  span img {
+    padding-right: 10px;
+    padding: none;
+  }
 }
