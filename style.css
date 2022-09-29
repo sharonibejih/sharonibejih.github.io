@@ -19,8 +19,16 @@ body {
   font-size: 16px;
   color: hsl(0, 0%, 0%);
   font-weight: 400;
-  overflow-x: hidden;
   /* width: 100%; */
+}
+
+.project-head{
+  font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+  
+    color: #000000;
 }
 
 .header{
@@ -38,6 +46,113 @@ body {
     flex-grow: 0;
 }
 
+.pub-title{
+  position: relative;
+
+  width: 484px;
+    height: 105px;
+  /* position: relative; */
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+  
+    color: #000000;
+  
+  
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.title{
+  /* box-sizing: border-box; */
+  
+    /* Auto layout */
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 8px; */
+    /* margin: auto; */
+    /* width: 564px;
+    height: 593px; */
+  
+    /* background: #200404; */
+    /* background-color: aqua; */
+    /* border: 1px solid #EBE4FD; */
+  
+    /* Inside auto layout */
+    /* flex: none;
+    order: 0;
+    flex-grow: 0; */
+    grid-area: title;
+    
+  /* position: relative; */
+  
+    width: 484px;
+    height: 105px;
+    /* position: relative; */
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+  
+    color: #000000;
+}
+
+
+
+.pub-title-p {
+    top: 33.24%;
+    bottom: 53.74%;
+  width: 484px;
+    height: 75px;
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 154.6%;
+    /* position: absolute; */
+    /* or 25px */
+  /* display: inline-flex; */
+    color: #000000;
+  
+  
+    /* Inside auto layout */
+    /* flex: none;
+    order: 3;
+    flex-grow: 0; */
+}
+
+.pub-title-p{
+    padding-top: 0;
+      margin-top: 0;
+}
+.title-p{
+    /* padding-top: 0; */
+      /* margin-top: auto; */
+      /* top: 0; */
+        bottom: 5.74%;
+        width: 484px;
+        height: 75px;
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 154.6%;
+        /* position: relative; */
+        /* or 25px */
+        /* display: inline-flex; */
+        color: #000000;
+        grid-area: title-p;
+}
+
 .hello{
   box-sizing: border-box;
   position: relative;
@@ -52,6 +167,7 @@ body {
     flex: none;
     order: 1;
     flex-grow: 0;
+    overflow-x: hidden;
 }
 
 .hello-head{
@@ -119,6 +235,8 @@ body {
     flex: none;
     order: 2;
     flex-grow: 0;
+    overflow-x: hidden;
+    margin-top: 3%;
 
 }
 
@@ -146,6 +264,8 @@ body {
     flex: none;
     order: 3;
     flex-grow: 0;
+    overflow-x: hidden;
+    overflow-y: hidden
 }
 
 .latest-publication{
@@ -189,6 +309,7 @@ body {
     flex: none;
     order: 4;
     flex-grow: 0;
+    overflow-x: hidden;
 }
 
 .exp{
@@ -211,7 +332,7 @@ body {
 
 footer{
   box-sizing: border-box;
-  
+  margin-top: 3%;
     width: 1440px;
     height: 172px;
   
@@ -221,7 +342,9 @@ footer{
     flex: none;
     order: 6;
     flex-grow: 0;
+    overflow-x: hidden;
 }
+
 
 .projects-box1{
   box-sizing: border-box;
@@ -232,11 +355,10 @@ footer{
     align-items: flex-start;
     padding: 40px;
     gap: 8px;
-  
+  /* margin: auto; */
     width: 564px;
     height: 593px;
-  
-    background: #FFFFFF;
+
     /* background-color: aqua; */
     border: 1px solid #EBE4FD;
   
@@ -323,22 +445,21 @@ footer{
   border-color: ;
 } */
 
-.projects-body{
-  display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 20px;
-  
-    width: 484px;
-    height: 513px;
-  
-  
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    background-color: #ffffff;
+
+
+.projects-texts{
+  position: relative;
+    display: grid;
+    gap: 0px;
+    grid-template-areas:
+      "title"
+      "title-p";
+/* position: relative;
+  padding-top: 0;
+  margin-top: 0; */
+  background-color: #1212ef;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .projects-img{
@@ -417,6 +538,13 @@ flex-grow: 0;
   grid-area: box4-pub;
 }
 
+.pub-body{
+  position: relative;
+    display: flex;
+    flex-direction: column;
+    /* align-items:center; */
+    gap: 1px;
+}
 .main-pub {
   position: relative;
   display: grid;
@@ -594,21 +722,19 @@ display: flex;
     padding: 0px;
     gap: 32px;
   
-    position: absolute;
+    position: relative;
     width: 501px;
     height: 20px;
     left: 803px;
     top: 46px;
-    background-color: #000000;
 }
 
 .left-nav{
-  position: absolute;
+  position: relative;
     left: 9.44%;
     right: 81.6%;
     top: 38.39%;
     bottom: 39.29%;
-  
     font-family: 'Sora';
     font-style: normal;
     font-weight: 500;
