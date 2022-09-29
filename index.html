@@ -5,104 +5,234 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Huddle</title>
+    <title>Bio</title>
     <link rel="shortcut icon" href="images/favicon-32x32.png">
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/c63ce54a43.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <section style="background: url(./images/bg-hero-desktop.svg); background-color: hsl(193, 100%, 96%);"
-        class="head-section">
-        <main class="header">
+    <!-- header -->
+    <div class="header">
+        <span class="right-nav">
+            <a href="mailto:sharonibejih@gmail.com" style="text-decoration: none; 
+               background-color: none; color: black;">Let's Talk</a>
 
-            <div class="nav">
-                <div class="nav1">
-                    <a href="#"><img src="./images/logo.svg" alt="logo" class="logo"></a>
-                </div>
-                <div class="nav2">
-                    <button>Try It Free</button>
-                </div>
-            </div>
+            <a href="mailto:sharonibejih@gmail.com" style="text-decoration: none; 
+                           background-color: none; color: black;">GitHub</a>
 
-            <div class="hero">
-                <div class="text">
-                    <h1>Build The Community<br>Your Fans Will Love</h1>
-                    <p>
-                        Huddle re-imagines the way we build communities. You have
-                        a voice, but so does your audience. Create connections with your
-                        users as your engage in genuine discussion.
-                    </p>
-                    <button>Get Started for free</button>
-                </div>
+            <a href="mailto:sharonibejih@gmail.com" style="text-decoration: none; 
+                           background-color: none; color: black;">Download Resume</a>
+            
+        </span>
+       </div> 
 
-                <div class="image">
-                    <img src="./images/illustration-mockups.svg" alt="chat-desktop and mobile mockups">
-                </div>
-            </div>
 
-        </main>
+       <div class="left-nav">
+           <p>Sharon Ibejih</p>
+       </div> 
+    </div>
+    <!-- <hr style="color: #4E28B1;"> -->
+
+    <!-- Hello page -->
+    <div class="hello">
+        <p class="hello-head">Hello there 👋🏽, I'm Sharon Ibejih</p>
+        <p class="hello-body">I am a machine learning engineer with research and industry experience. I analyze data, build and package machine learning models for production. I have also authored some interesting research papers.</p>
+    </div>
+
+        <!-- Experiences (Table)-->
+    <section class="experiences">
+        <p class="exp">Experiences</p>
+        <div style="overflow-x:auto">
+        <table>
+        
+            <tr>
+                <td>Data Scientists Network (DSN) - Lagos, Nigeria</td>
+                <td>Researcher & Solution Analyst</td>
+                <td>October 2020 - April 2022</td>
+            </tr>
+            <tr>
+                <td>Insidatics AI Inc. - Delaware, USA</td>
+                <td>ML Software Engineer (Contract)</td>
+                <td>February 2022 - Present</td>
+            </tr>
+            <tr>
+                <td>RectLabs Inc. - Lagos, Nigeria</td>
+                <td>AI Engineer</td>
+                <td>July 2022 - September 2022</td>
+            </tr>
+        
+        </table>
+        </div>
+        
     </section>
 
-    <section class="main-body">
-        <main class="main-main">
 
-            <div class="box1">
-                <div class="_body">
-                    <h3>Grow Together</h3>
+    <!-- Selected Projects-->
+    <section class="projects">
+        <p class="selected-project">Selected Projects</p>
+        <!-- inner box containing the four boxes -->
+        <main class="main-projects">
+            
+            <div class="projects-box1">
+                <div class="projects-body">
+                    <div class="projects-img" style="background-color: #FFD7D7;">
+                        <img src="assets/Frame1.png" alt="illustration">
+                    </div>
+                    
+                    <h3>NG Apps Analytics</h3>
                     <p>
                         Generate meaningful discussions with your audience and build a strong, loyal
                         community. Think of the insightful conversations you miss out with a feedback form.
                     </p>
                 </div>
-                <div class="_img">
-                    <img src="./images/illustration-grow-together.svg" alt="illustration-grow-together">
-                </div>
+                
             </div>
-
-            <div class="box2">
-                <div class="_body">
+        
+            <div class="projects-box2">
+                <div class="projects-body">
+                    <div class="projects-img" style="background-color: #DCEFFF;">
+                        <img src="assets/Frame2.png" alt="illustration">
+                    </div>
                     <h3>Flowing Conversations</h3>
                     <p>You wouldn't paginate a conversation in real life, so why do it online? Our trends have
                         just in-time loading for a more natural flow.
                     </p>
                 </div>
-                <div class="_img">
-                    <img src="./images/illustration-flowing-conversation.svg" alt="illustration-flowing-conversation">
-                </div>
+                <!-- <div class="_img"> -->
+                    <!-- <img src="./images/illustration-flowing-conversation.svg" alt="illustration-flowing-conversation"> -->
+                <!-- </div> -->
             </div>
-
-            <div class="box3">
-                <div class="_body">
+        
+            <div class="projects-box3">
+                <div class="projects-body">
+                    <div class="projects-img" style="background-color: #F0EBFC;">
+                        <img src="assets/Frame3.png" alt="illustration">
+                    </div>
                     <h3>Your Users</h3>
                     <p>
                         It takes no time at all to integrate Huddle with your app's authentication solution.
                         This means, once signed in to your app, your users can start chatting immediately.
                     </p>
                 </div>
-                <div class="_img">
-                    <img src="./images/illustration-your-users.svg" alt="illustration-your-users">
-                </div>
+                
             </div>
-
-            <div class="box4">
+        
+            <div class="projects-box4">
+                <div class="projects-body">
+                <div class="projects-img" style="background-color: #F2FFF3;">
+                    <img src="assets/Frame4.png" alt="illustration">
+                </div>
                 <h2>Ready to Build Your Community?</h2>
                 <button>Get Started For Free</button>
             </div>
 
+            </div>
+        
         </main>
+    
     </section>
+
+
+    <section class="publications">
+        <p class="latest-publication">Latest Publications</p>
+        <!-- inner box containing the four boxes -->
+        <main class="main-pub">
+    
+            <div class="pub-box1">
+                <div class="pub-body">
+                    <!-- <div class="pub-img" style="background-color: #FFD7D7;">
+                        <img src="assets/Frame1.png" alt="illustration">
+                    </div> -->
+    
+                    <h3>NG Apps Analytics</h3>
+                    <p>
+                        Generate meaningful discussions with your audience and build a strong, loyal
+                        community. Think of the insightful conversations you miss out with a feedback form.
+                    </p>
+                </div>
+    
+            </div>
+    
+            <div class="pub-box2">
+                <div class="pub-body">
+                    <!-- <div class="pub-img" style="background-color: #DCEFFF;">
+                        <img src="assets/Frame2.png" alt="illustration">
+                    </div> -->
+                    <h3>Flowing Conversations</h3>
+                    <p>You wouldn't paginate a conversation in real life, so why do it online? Our trends have
+                        just in-time loading for a more natural flow.
+                    </p>
+                </div>
+                <!-- <div class="_img"> -->
+                <!-- <img src="./images/illustration-flowing-conversation.svg" alt="illustration-flowing-conversation"> -->
+                <!-- </div> -->
+            </div>
+    
+            <div class="pub-box3">
+                <div class="pub-body">
+                    <!-- <div class="pub-img" style="background-color: #F0EBFC;">
+                        <img src="assets/Frame3.png" alt="illustration">
+                    </div> -->
+                    <h3>Your Users</h3>
+                    <p>
+                        It takes no time at all to integrate Huddle with your app's authentication solution.
+                        This means, once signed in to your app, your users can start chatting immediately.
+                    </p>
+                </div>
+    
+            </div>
+    
+            <div class="pub-box4">
+                <div class="pub-body">
+                    <!-- <div class="pub-img" style="background-color: #F2FFF3;">
+                        <img src="assets/Frame4.png" alt="illustration">
+                    </div> -->
+                    <h2>Ready to Build Your Community?</h2>
+                    <button>Get Started For Free</button>
+                </div>
+    
+            </div>
+    
+        </main>
+    
+    </section>
+
 
     <footer>
 
         <div class="div-footer">
 
             <div class="col1">
-                <div class="footer-logo">
+                <p>@2022. Design by Kachie Ibejih | Dev by me :)</p>
+
+                <!-- <div class="footer-logo">
                     <img src="./images/logo.svg" alt="logo" class="logo-big">
+                </div> -->
+            <div>
+
+            <div class="col2">
+                <div class="col2_1">
+                <span style="display:flex; gap:10px">
+                    <a href="mailto:sharonibejih@gmail.com">
+                    <img src="assets/email.png" /></a>
+                <a href="mailto:sharonibejih@gmail.com" style="text-decoration: none; 
+   background-color: none; color: black;">sharonibejih@gmail.com</a>
                 </div>
-                <div>
-                    <span style="position:relative;display:flex;">
+
+                <div class="col2_2">
+                    <span>
+                        <a href="https://github.com/sharonibejih">
+                        <img src="assets/github-icon.png"/></a>
+
+                        <a href="https://twitter.com/sharonibejih">
+                        <img src="assets/twitter.png"/></a>
+
+                        <a href="https://www.linkedin.com/in/sharonibejih/">
+                        <img src="assets/linkedin-icon.png"/></a>
+                </div>
+            </div>
+                    <!-- <span style="position:relative;display:flex;">
                         <img src="./images/icon-location.svg" />
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident aut tempore asperiores in
                             cum nemo expedita!</p>
@@ -125,21 +255,7 @@
                 <p><a href="#">About Us</a></p>
                 <p><a href="#">What We Do</a></p>
                 <a href="#">FAQ</a>
-            </div>
-
-            <div class="col3">
-                <p><a href="#">Career</a></p>
-                <p><a href="#">Blog</a></p>
-                <a href="#">Contact Us</a>
-            </div>
-            <div class="col4">
-                <span style="display: inline;">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </span><br>
-                <small>&copy; Copyright 2018 Huddle. All rights reserved.</small>
-            </div>
+            </div> -->
 
         </div>
     </footer>
