@@ -22,6 +22,16 @@ body {
   /* width: 100%; */
 }
 
+.publication-head{
+  font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: -0.02em;
+    margin-top: auto;
+  
+    color: #000000;
+}
+
 .project-head{
   font-weight: 600;
     font-size: 28px;
@@ -69,26 +79,7 @@ body {
 }
 
 .title{
-  /* box-sizing: border-box; */
-  
-    /* Auto layout */
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 40px;
-    gap: 8px; */
-    /* margin: auto; */
-    /* width: 564px;
-    height: 593px; */
-  
-    /* background: #200404; */
-    /* background-color: aqua; */
-    /* border: 1px solid #EBE4FD; */
-  
-    /* Inside auto layout */
-    /* flex: none;
-    order: 0;
-    flex-grow: 0; */
+
     grid-area: title;
     
   /* position: relative; */
@@ -104,6 +95,12 @@ body {
     letter-spacing: -0.02em;
   
     color: #000000;
+}
+
+.org{
+  font-style:normal;
+  letter-spacing: 0.0em;
+  font-weight: 600;
 }
 
 
@@ -174,7 +171,7 @@ body {
   position: absolute;
     left: 14.03%;
     right: 14.03%;
-    top: 33.24%;
+    top: 20.24%;
     bottom: 53.74%;
   
     font-family: 'Sora';
@@ -189,11 +186,24 @@ body {
     color: #000000;
 }
 
+/* .project-head{
+  position: absolute;
+  top: 10.24%; */
+  /* bottom: 53.74%; */
+/* }
+
+.project-body {
+  position: absolute;
+  top: 10.24%; */
+  /* bottom: 33.74%; */
+/* } */
+
+
 .hello-body{
   position: absolute;
     left: 21.39%;
     right: 21.32%;
-    top: 52.91%;
+    top: 42.91%;
     bottom: 33.24%;
     padding-top: 2%;
   
@@ -537,6 +547,16 @@ flex-grow: 0;
 .pub-box4{
   grid-area: box4-pub;
 }
+/* 
+.project-head {
+  top: 5%;
+  position: absolute;
+}
+
+.project-body {
+  top: 1%;
+  position: absolute;
+} */
 
 .pub-body{
   position: relative;
@@ -544,6 +564,7 @@ flex-grow: 0;
     flex-direction: column;
     /* align-items:center; */
     gap: 1px;
+    /* top: 42.91%; */
 }
 .main-pub {
   position: relative;
@@ -733,8 +754,8 @@ display: flex;
   position: relative;
     left: 9.44%;
     right: 81.6%;
-    top: 38.39%;
-    bottom: 39.29%;
+    top:30px;
+    /* bottom: 39.29%; */
     font-family: 'Sora';
     font-style: normal;
     font-weight: 500;
