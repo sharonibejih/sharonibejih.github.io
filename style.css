@@ -56,6 +56,33 @@ body {
     flex-grow: 0;
 }
 
+.picture_border{
+  position: relative;
+    left: 9.44%;
+    right: 72.22%;
+    top: 23.81%;
+    bottom: 23.81%;
+  
+    background: #EBE4FD;
+}
+
+.picture{
+  position: absolute;
+    left:0;
+    right: 73.22%;
+    top: 26.39%;
+    bottom: 24.81%;
+  /* background: #3b364a */
+  
+      /* height: auto; */
+}
+
+.clip{
+  border-radius: 50%;
+  border: 4px solid #EBE4FD;
+    padding: 5px;
+}
+
 .pub-title{
   position: relative;
 
@@ -169,8 +196,8 @@ body {
 
 .hello-head{
   position: absolute;
-    left: 14.03%;
-    right: 14.03%;
+    left: 28.78%;
+      right: 9.44%;
     top: 20.24%;
     bottom: 53.74%;
   
@@ -180,31 +207,53 @@ body {
     font-size: 40px;
     line-height: 117%;
     /* identical to box height, or 47px */
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: -0.02em;
   
     color: #000000;
 }
 
-/* .project-head{
+/* .hello-head {
   position: absolute;
-  top: 10.24%; */
-  /* bottom: 53.74%; */
-/* }
+  left: 32.78%;
+  right: 9.44%;
+  top: 38.1%;
+  bottom: 52.58%;
 
-.project-body {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+
+  color: #000000;
+} */
+
+
+/* .hello-body {
   position: absolute;
-  top: 10.24%; */
-  /* bottom: 33.74%; */
-/* } */
+  left: 32.78%;
+  right: 9.44%;
+  top: 52.18%;
+  bottom: 37.9%;
+  padding-top: 2%;
 
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 154.6%;
+
+  color: #000000;
+} */
 
 .hello-body{
   position: absolute;
-    left: 21.39%;
-    right: 21.32%;
-    top: 42.91%;
-    bottom: 33.24%;
+    left: 28.78%;
+      right: 9.44%;
+      top: 40.24%;
+      bottom: 37.9%;
     padding-top: 2%;
   
     font-family: 'Sora';
@@ -213,7 +262,7 @@ body {
     font-size: 16px;
     line-height: 154.6%;
     /* or 25px */
-    text-align: center;
+    /* text-align: center; */
   
     color: #000000;
 }
