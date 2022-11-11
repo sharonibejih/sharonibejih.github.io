@@ -289,7 +289,7 @@ body {
 .projects{
   width: 1440px;
     height: 1496px;
-    background: #F8F8F9;
+    background: #FFFFFF;
 
     /* Inside auto layout */
     flex: none;
@@ -318,7 +318,7 @@ body {
   width: 1440px;
     height: 1079px;
   
-    background: #FFFFFF;
+    background: #F8F8F9;
   
     /* Inside auto layout */
     flex: none;
@@ -786,19 +786,21 @@ display: flex;
   flex-grow: 1; */
   /* } */
 
-.right-nav{
+.right-nav div{
   display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
     gap: 32px;
   
-    position: fixed;
-    width: 1100px;
+    position:relative;
+    /* width: 1100px; */
+    width: 503px;
     height: 20px;
     left: 738px;
     top: 46px;
 }
+
 
 .left-nav{
   position: relative;
