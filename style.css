@@ -316,7 +316,8 @@ body {
 
 .publications{
   width: 1440px;
-    height: 1079px;
+    /* height: 1079px; */
+    height: 1200px;
   
     background: #F8F8F9;
   
@@ -362,7 +363,8 @@ body {
 
 .experiences{
   width: 1440px;
-    height: 571px;
+    /* height: 571px; */
+    height: 680px;
   
   
     /* Inside auto layout */
