@@ -33,7 +33,7 @@ body {
     color: #000000;
 }
 
-.project-head{
+.project-head, .talk-head{
   font-weight: 600;
     font-size: 28px;
     line-height: 35px;
@@ -193,6 +193,7 @@ body {
     order: 1;
     flex-grow: 0;
     overflow-x: hidden;
+    /* overflow-y: hidden; */
 }
 
 .hello-head{
@@ -268,7 +269,7 @@ body {
     color: #000000;
 }
 
-.selected-project{
+.selected-project, .latest-talk{
   position: relative;
     left: 9.44%;
     right: 46.53%;
@@ -300,7 +301,21 @@ body {
 
 }
 
-.main-projects{
+.talks {
+  width: 1440px;
+  height: 1496px;
+  background: #F8F8F9;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  overflow-x: hidden;
+  margin-top: 3%;
+
+}
+
+.main-projects, .main-talk{
   display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -408,7 +423,7 @@ footer{
 }
 
 
-.projects-box1{
+.projects-box1, .talk-box1{
   box-sizing: border-box;
   
     /* Auto layout */
@@ -431,7 +446,7 @@ footer{
     grid-area: box1;
 }
 
-.projects-box2{
+.projects-box2, .talk-box2{
   box-sizing: border-box;
   
     /* Auto layout */
@@ -455,7 +470,7 @@ footer{
     grid-area: box2;
 }
 
-.projects-box3{
+.projects-box3, .talk-box3{
   box-sizing: border-box;
   
     /* Auto layout */
@@ -479,7 +494,7 @@ footer{
     grid-area: box3;
 }
 
-.projects-box4{
+.projects-box4, .talk-box4{
   box-sizing: border-box;
   
     /* Auto layout */
@@ -534,6 +549,17 @@ footer{
     place-items: center;
 }
 
+.talk-img {
+  width: 484px;
+  height: 249px;
+  /* position: absolute; */
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  place-items: center;
+}
+
 
 .projects-body img{
   position: relative;
@@ -546,7 +572,7 @@ footer{
     top: 3%;
 }
 
-.main-projects{
+.main-projects, .main-talk{
   position: relative;
   display: grid;
   gap: 40px;
@@ -599,6 +625,33 @@ flex-grow: 0;
 .pub-box4{
   grid-area: box4-pub;
 }
+
+/* .talk-box1,
+.talk-box3 {
+  order: 0;
+}
+
+.talk-box2,
+.talk-box4 {
+  order: 1;
+}
+
+.talk-box1 {
+  grid-area: box1-pub;
+}
+
+.talk-box2 {
+  grid-area: box2-pub;
+}
+
+.talk-box3 {
+  grid-area: box3-pub;
+}
+
+.talk-box4 {
+  grid-area: box4-pub;
+} */
+
 /* 
 .project-head {
   top: 5%;
@@ -618,7 +671,7 @@ flex-grow: 0;
     gap: 1px;
     /* top: 42.91%; */
 }
-.main-pub {
+.main-pub{
   position: relative;
   display: grid;
   gap: 40px;
